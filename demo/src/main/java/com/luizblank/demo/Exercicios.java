@@ -1,6 +1,7 @@
 package com.luizblank.demo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -152,13 +153,17 @@ public class Exercicios {
     public void exercicio8()
     {
         Scanner ler = new Scanner(System.in);
+        ArrayList<Float> numbers = new ArrayList<Float>();
 
-        System.out.print("Digite alguma coisa:\n> ");
-        String texto = ler.nextLine();
+        System.out.print("Quantos valore você vai inserir?\n> ");
+        int numbers_length = ler.nextInt();
 
-        if(texto.length() % 2 == 0)
+        for(int i = 0; i < numbers_length; i++)
         {
-
+            System.out.printf("Insira o %dº valor: ", i + 1);
+            numbers.add(ler.nextFloat());
         }
+
+        System.out.println("\nO maior número na lista é: " + Collections.max(numbers));
     }
 }

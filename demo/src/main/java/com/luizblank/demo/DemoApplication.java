@@ -12,7 +12,7 @@ public class DemoApplication {
 
         Exercicios ex = new Exercicios();
         
-        ex.exercicio8();
+        ex.exercicio9();
     }
 
 }

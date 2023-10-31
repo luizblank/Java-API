@@ -166,4 +166,26 @@ public class Exercicios {
 
         System.out.println("\nO maior número na lista é: " + Collections.max(numbers));
     }
+
+    public void exercicio9()
+    {
+        Scanner ler = new Scanner(System.in);
+
+        System.out.print("Digite um texto:\n> ");
+        String text = ler.nextLine();
+
+        String[] splitText = text.split(" ");
+        int textLength = splitText.length;
+
+        if(textLength % 2 == 0)
+        {
+            int index = textLength / 2;
+            System.out.printf("Palavras centrais: %s %s",splitText[index - 1], splitText[index]);
+        }
+        else
+        {
+            int index = textLength / 2;
+            System.out.printf("Palavra central: %s", splitText[index]);
+        }
+    }
 }

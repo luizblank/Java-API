@@ -1,4 +1,4 @@
-package com.luizblank.demo;
+package com.luizblank.demo.exercises;
 
 public class Pessoas {
     public String nome;

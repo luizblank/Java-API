@@ -1,14 +1,9 @@
-package com.luizblank.demo;
+package com.luizblank.demo.exercises;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import com.jayway.jsonpath.internal.function.text.Length;
-
-import ch.qos.logback.core.subst.Token.Type;
 
 @SpringBootApplication
 public class Exercicios {
